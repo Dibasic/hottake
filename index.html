@@ -1,0 +1,51 @@
+<head></head>
+<body>
+<p id="output"></p>
+<script>
+Array.prototype.rand = function () {
+    return this[Math.floor(Math.random() * this.length)]
+}
+var subjects = [
+  "The US military"
+, "Israel"
+, "Kamala Harris"
+, "Glenn Greenwald"
+, "Health insurance companies"
+, "The marijuana industry"
+, "Saudi Arabia"
+, "Erdogan"
+, "ISIS"
+, "Killer Mike"
+, "The Patriots"
+, "Chris Brown"
+, "Brett Kavanaugh"
+, "The Covington Catholic students"
+, "23AndMe's chief geneticist"
+, "Ben Shapiro"
+, "Jordan Peterson"
+, "Joe Rogan"
+];
+var predicates = [
+  "wasting money on submarines"
+, "being nominated"
+, "endorsing Jill Stein"
+, "appearing on Ben Shapiro's podcast"
+, "starting a Patreon"
+, "starting a podcast"
+, "making a GoFundMe"
+, "going on The Joe Rogan Experience"
+, "joining the Proud Boys"
+];
+var opinions = [
+  "is good actually"
+, "is bad actually"
+, "whips ass"
+, "sucks"
+, "would own"
+, "is counterrevolutionary"
+, "is undialectical"
+];
+var take = subjects.rand() + " " + predicates.rand() + " " + opinions.rand();
+document.getElementById("output").innerHTML = take;
+</script>
+</body>
